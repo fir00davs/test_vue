@@ -7,13 +7,20 @@
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
   components: {
     HelloWorld
   }
 }
+    },
+    deleteIncome(index) {
+      this.incomes.splice(index, 1);
+    },
+    deleteExpense(index) {
+      this.expenses.splice(index, 1);
+    },
+  },
+};
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
